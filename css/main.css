@@ -6,16 +6,32 @@ htm,
 body {
   padding: 0;
   margin: 0;
+  font-size: 16px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  background-color: rgb(229, 229, 218);
+  border-bottom: 1px solid rgb(189, 199, 187);
+}
+nav h1 {
+  font-size: 3.5em;
+  font-family: 'Trirong', serif;
+  color: rgb(28, 86, 148);
 }
 
 main {
-  background-color: #81BEF7;
+  background-color: rgb(255, 255, 245);
+  font-family: 'Oswald', sans-serif;
 }
 
 .full-page {
-  font-family: 'Merriweather', serif;
+
   height: 100vh;
   padding: 2rem 5rem;
+  color: rgb(70, 70, 70);
 }
 
 .full-page h1 {
