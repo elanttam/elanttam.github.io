@@ -6,6 +6,7 @@
     "lite": "lite-server"
   },
   "dependencies": {
+    "scrollmagic": "^2.0.5"
   },
   "devDependencies": {
     "concurrently": "^3.0.0",

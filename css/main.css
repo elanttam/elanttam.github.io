@@ -7,24 +7,50 @@ body {
   padding: 0;
   margin: 0;
   font-size: 16px;
+  font-family: 'Oswald', sans-serif;
 }
-nav {
+
+header {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
   background-color: rgb(229, 229, 218);
   border-bottom: 1px solid rgb(189, 199, 187);
 }
-nav h1 {
-  font-size: 3.5em;
+
+header h1 {
+  font-size: 6vw;
+  margin: 0;
   font-family: 'Trirong', serif;
   color: rgb(28, 86, 148);
 }
 
+header nav {
+  display: inline-block;
+  float: right;
+}
+
+header nav a {
+  text-decoration: none;
+}
+
+header.shrink {
+  height: 50px;
+}
+
+header.shrink h1 {
+  font-size: 4vw;
+}
+
 main {
   background-color: rgb(255, 255, 245);
-  font-family: 'Oswald', sans-serif;
+  padding-top: 100px;
 }
 
 .full-page {
@@ -38,4 +64,11 @@ main {
   font-size: 10vw;
   text-align: center;
   margin-top: 0;
+}
+
+.content {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 2.5rem;
+  height: 800px;
 }
