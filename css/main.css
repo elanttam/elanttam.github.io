@@ -77,3 +77,31 @@ main {
   font-size: 2.5rem;
   height: 800px;
 }
+
+@media only screen and (max-width: 768px) {
+  header {
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    height: 65px;
+  }
+  header h1 {
+    font-size: 2.4em;
+    height: 100%;
+    margin-left: 10px;
+  }
+
+  header nav {
+    height: 100%;
+    margin-top: 20px;
+  }
+
+  header.shrink {
+    height: 45px;
+  }
+
+  header.shrink h1 {}
+    font-size: 1.5em;
+    height: 100%;
+  }
+}
