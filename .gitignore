@@ -2,10 +2,14 @@
 .DS_Store
 
 # allow necessary items from node_modules folder
+!/node_modules/
 /node_modules/*
 
 # scrollmagic
-/node_modules/scrollmagic/*/
-/node_modules/scrollmagic/scrollmagic/*/
-/node_modules/scrollmagic/scrollmagic/minified/*/
+!/node_modules/scrollmagic
+/node_modules/scrollmagic/*
+!/node_modules/scrollmagic/scrollmagic
+/node_modules/scrollmagic/scrollmagic/*
+!/node_modules/scrollmagic/scrollmagic/minified/
+/node_modules/scrollmagic/scrollmagic/minified/*
 !/node_modules/scrollmagic/scrollmagic/minified/ScrollMagic.min.js
