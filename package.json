@@ -6,6 +6,8 @@
     "lite": "lite-server"
   },
   "dependencies": {
+    "font-awesome": "^4.7.0",
+    "fontawesome": "^4.5.0",
     "scrollmagic": "^2.0.5"
   },
   "devDependencies": {
