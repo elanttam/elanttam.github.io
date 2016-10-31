@@ -31,18 +31,18 @@ header i {
 }
 
 header nav {
+  display: none;
   width: 100%;
-  height: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   background-color: rgb(77, 163, 123);
-  opacity: 0;
   padding-bottom: 10px;
 }
 
 header nav i{
   color: rgb(70, 70, 70);
+}
+
+header i.fa-close {
+  display: none;
 }
 
 header nav a {
@@ -60,9 +60,19 @@ header.open i {
   color: rgb(70 , 70, 70);
 }
 
+header.open i.fa-close {
+  display: block;
+}
+
+header.open i.fa-bars {
+  display: none;
+}
+
+
 header.open nav {
-  height: auto;
-  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 

@@ -19,7 +19,10 @@
 </head>
 <body>
   <header class="animated">
-    <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+    <div class="menu">
+      <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+      <i class="fa fa-close fa-2x" aria-hidden=true></i>
+    </div>
     <nav class="animated">
       <a href="/blog">blog</a>
       <a href="/resume">resume</a>
@@ -43,8 +46,8 @@
   //         .setClassToggle("header", "shrink") // add class toggle
   //         .addTo(controller);
 
-  var bars = document.getElementsByClassName("fa-bars");
-  bars[0].addEventListener("click", function() {
+  var menu = document.getElementsByClassName("menu");
+  menu[0].addEventListener("click", function() {
     var header = document.getElementsByTagName("header")[0];
     var nav = document.getElementsByTagName("nav")[0];
     header.classList.toggle("open");
