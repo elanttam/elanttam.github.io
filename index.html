@@ -25,6 +25,12 @@
   </header> -->
   <header>
     <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+    <nav>
+      <a href="/blog">blog</a>
+      <a href="/resume">resume</a>
+      <a href="https://github.com/elanttam"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+      <a href="https://twitter.com/elanttam"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+    </nav>
   </header>
   <main>
     <div class="full-page">
@@ -35,9 +41,15 @@
 
 </body>
 <script>
-var controller = new ScrollMagic.Controller();
-new ScrollMagic.Scene({triggerElement: ".content"})
-        .setClassToggle("header", "shrink") // add class toggle
-        .addTo(controller);
+  // var controller = new ScrollMagic.Controller();
+  // new ScrollMagic.Scene({triggerElement: ".content"})
+  //         .setClassToggle("header", "shrink") // add class toggle
+  //         .addTo(controller);
+
+  var bars = document.getElementsByClassName("fa-bars");
+  bars[0].addEventListener("click", function() {
+    var header = document.getElementsByTagName("header");
+    header[0].classList.toggle("open");
+  }, false);
 </script>
 </html>

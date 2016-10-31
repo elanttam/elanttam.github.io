@@ -12,40 +12,53 @@ body {
 }
 
 header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  height: 100px;
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
+  text-align: center;
   z-index: 999;
   background-color: transparent;
 }
 
-header h1 {
-  font-size: 4em;
-  height: 75px;
-  margin: 0;
-  font-family: 'Trirong', serif;
-  color: rgb(70, 70, 70);
-}
-
 header i {
   color: rgb(77, 163, 123);
+  margin-top: 10px;
 }
 
 header nav {
-  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  height: 75px;
+  width: 100%;
+  background-color: rgb(77, 163, 123);
+  display: none;
+}
+
+header nav i{
+  color: rgb(70, 70, 70);
 }
 
 header nav a {
   text-decoration: none;
-  margin-right: 15px;
-  color: rgb(0 , 0, 0);
+  margin: 10px;
+  color: rgb(70 , 70, 70);
 }
+
+header.open {
+  background-color: rgb(77, 163, 123);
+}
+
+header.open i {
+  color: rgb(70 , 70, 70);
+}
+
+header.open nav {
+  display: block;
+}
+
 
 header.shrink {
   height: 50px;
