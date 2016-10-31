@@ -18,15 +18,9 @@
   <script src="node_modules/scrollmagic/scrollmagic/minified/ScrollMagic.min.js"></script>
 </head>
 <body>
-  <!-- <header>
-    <nav>
-      <a href="/resume">resume</a>
-      <a href="/blog">blog</a>
-    </nav>
-  </header> -->
-  <header>
+  <header class="animated">
     <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
-    <nav>
+    <nav class="animated">
       <a href="/blog">blog</a>
       <a href="/resume">resume</a>
       <a href="https://github.com/elanttam"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
@@ -35,7 +29,9 @@
   </header>
   <main>
     <div class="full-page">
-      <h1 class="animated rubberBand">Matthew Nale</h1>
+      <h1 class="animated rubberBand">
+        <a href="mailto:matthewnale@gmail.com">Matthew Nale</a>
+      </h1>
       <h3>Full Stack and iOS Developer</h3>
     </div>
   </main>
@@ -49,12 +45,11 @@
 
   var bars = document.getElementsByClassName("fa-bars");
   bars[0].addEventListener("click", function() {
-    var header = document.getElementsByTagName("header");
-    header[0].classList.toggle("open");
-
-    // var nav = document.getElementsByTagName("nav");
-    // nav[0].classList.toggle("slideInDown");
-    // nav[0].classList.toggle("slideInUp");
+    var header = document.getElementsByTagName("header")[0];
+    var nav = document.getElementsByTagName("nav")[0];
+    header.classList.toggle("open");
+    nav.classList.toggle("fadeIn");
+    header.classList.toggle("fadeIn");
   }, false);
 </script>
 </html>
