@@ -6,6 +6,7 @@
     "lite": "lite-server"
   },
   "dependencies": {
+    "animate.css": "^3.5.2",
     "font-awesome": "^4.7.0",
     "scrollmagic": "^2.0.5"
   },

@@ -30,11 +30,10 @@ header nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-direction: row;
-  height: 75px;
   width: 100%;
   background-color: rgb(77, 163, 123);
   display: none;
+  padding-bottom: 10px;
 }
 
 header nav i{
@@ -43,7 +42,7 @@ header nav i{
 
 header nav a {
   text-decoration: none;
-  margin: 10px;
+  margin: 20px 20px 0 20px;
   color: rgb(70 , 70, 70);
 }
 
