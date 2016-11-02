@@ -62,13 +62,29 @@
   //         .setClassToggle("header", "shrink") // add class toggle
   //         .addTo(controller);
 
-  var menu = document.getElementsByClassName("menu");
-  menu[0].addEventListener("click", function() {
-    var header = document.getElementsByTagName("header")[0];
-    var nav = document.getElementsByTagName("nav")[0];
+  var menu = document.getElementsByClassName("menu")[0];
+  var header = document.getElementsByTagName("header")[0];
+  var nav = document.getElementsByTagName("nav")[0];
+
+  // animate the opening of nav menu
+  menu.addEventListener("click", function() {
     header.classList.toggle("open");
     nav.classList.toggle("fadeIn");
     header.classList.toggle("fadeIn");
+  }, false);
+
+  var timer = null;
+  window.addEventListener('scroll', function(e) {
+    header.classList.add("fade");
+    nav.classList.add("fade");
+
+    if(timer !== null) {
+        clearTimeout(timer);
+    }
+    timer = setTimeout(function() {
+      header.classList.remove("fade");
+      nav.classList.remove("fade");
+    }, 150);
   }, false);
 </script>
 </html>
