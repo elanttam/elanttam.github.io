@@ -1,6 +1,8 @@
 *.log
 .DS_Store
 
+/css/*.css
+
 # allow necessary items from node_modules folder
 !/node_modules/
 /node_modules/*

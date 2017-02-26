@@ -2,7 +2,7 @@
   "name": "elanttam.com",
   "version": "1.0.0",
   "scripts": {
-    "start": "concurrently \"npm run tsc:w\" \"npm run lite\"",
+    "start": "concurrently \"lessc ./css/main.less ./css/main.css\" \"npm run lite\"",
     "lite": "lite-server"
   },
   "dependencies": {
@@ -12,7 +12,7 @@
   },
   "devDependencies": {
     "concurrently": "^3.0.0",
-    "lite-server": "^2.2.2",
-    "typescript": "^2.0.3"
+    "less": "^2.7.2",
+    "lite-server": "^2.2.2"
   }
 }
